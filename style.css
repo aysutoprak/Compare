@@ -1,0 +1,141 @@
+html, body{
+    background: url(./img/ToDoBg.png) no-repeat center fixed;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:black;
+    text-shadow: 5px 2px 5px rgb(15, 12, 54);
+    animation-name: colorchangess;
+    animation-duration : 5s;
+    animation-iteration-count: infinite;
+
+/*     position : absolute;
+    top : 10px;
+    left : 10px; */
+}
+
+
+.container{
+    width: 360px;
+}
+
+@keyframes colorchangess {
+    0% {color: black;}
+    25%   {color: rgb(24, 11, 82);}
+    50%   {color: rgb(14, 62, 126);}
+    100% {color:rgb(0, 225, 255);}
+    50%   {color: rgb(14, 62, 126);}
+    25%   {color: rgb(24, 11, 82);}
+    100% {color: black;} 
+  }
+
+#inputField{
+    width: 300px;
+    height: 48px;
+    outline: none;
+    font-size: 45px;
+    vertical-align: middle;
+    outline-style: solid;
+    outline-color: cadetblue;
+
+/*     position : absolute;
+    top :80px;
+    left : 10px; */
+}
+
+#add{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+    outline-style: solid;
+
+/*     position : absolute;
+    top : 81px;
+    left : 324px; */
+}
+
+#add:hover{
+    background: rgb(135, 172, 252);
+}
+
+.items{
+/*     position: absolute;
+    left : 10px;
+    top : 150px; */
+    margin-top: 25px;
+}
+
+.paragraph-styling{
+    border-radius: 25px;
+    border: 2px solid #d6f7a8;
+    padding: 20px;
+    background-color: white;
+    margin-top: -15px;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.rate-styling{
+    left: 50px;
+    padding: 15px;
+    margin-top: 15px;
+    cursor:pointer;
+    position: relative;
+    top:-63px;
+    left: 100px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 235);
+    font-size: 15px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    
+}
+
+.close{
+    left:50px;
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+    top:-63px;
+    left:300px;
+    border-style : dashed;
+    border-radius: 25px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+
+  .rate{
+    left:50px;
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+    top:-63px;
+    left:100px;
+    border-style : dashed;
+    border-radius: 25px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+
+  .close:hover {background: rgb(231, 153, 153);}
+
+  .rate:hover {background: rgb(133, 224, 247);}
